@@ -26,7 +26,7 @@ class Config(object):
     OUO_IO_API_KEY = ""
     MAX_MESSAGE_LENGTH = 4096
     PROCESS_MAX_TIMEOUT = 3600
-    DEF_WATER_MARK_FILE = "@UploaderXNTBot"
+    DEF_WATER_MARK_FILE = "@Only_url_uploader_bot"
 
     ADMIN = set(
         int(x) for x in environ.get("ADMIN", "").split()
@@ -43,11 +43,11 @@ class Config(object):
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
     LOGGER = logging
     OWNER_ID = int(os.environ.get("OWNER_ID", ""))
-    SESSION_NAME = "UploaderXNTBot"
+    SESSION_NAME = "Only_url_uploader_bot"
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
 
     TG_MIN_FILE_SIZE = 2194304000
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "@Only_url_uploader_bot")
     ADL_BOT_RQ = {}
 
     # Set False off else True
